@@ -1,16 +1,9 @@
-# Learn How to Monitor Kubedoom on Grafana
+# Implementasi Monitoring KubeDoom dalam Kubernetes Cluster
 
 ## Prerequisite
 
-1. Tambahkan helm repository Helm kubeinvaders
-```bash
-$ helm repo add kubeinvaders https://lucky-sideburn.github.io/helm-charts/
-```
-
-2. Buat namespace kubeinvaders
-```bash
-$ kubectl create namespace kubeinvaders
-```
+1. Kubernetes Cluster telah di setting
+2. VNC Client sudah di install
 
 ## Installation
 
