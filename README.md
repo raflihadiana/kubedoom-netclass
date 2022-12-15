@@ -12,74 +12,36 @@ $ helm repo add kubeinvaders https://lucky-sideburn.github.io/helm-charts/
 $ kubectl create namespace kubeinvaders
 ```
 
-3. Buat namespace target
-```bash
-$ kubectl create namespace netclass
-```
-
-4. Install kubeinvaders dengan tambahan konfigurasi tambahan namespace target
-```bash
-$ helm install kubeinvaders --set-string target_namespace="netclass" \
--n kubeinvaders kubeinvaders/kubeinvaders --set ingress.hostName=netclass.pod --set image.tag=v1.9
-```
-
-5. Update helm repository
-```bash
-$ helm repo update
-```
-
-6. Install package helm nginx-ingress
-```bash
-$ helm install nginx-ingress ingress-nginx/ingress-nginx
-```
-
-7. Edit Ingress
-```txt
-# kubectl.io/ingress.class: "nginx"
-```
-
-
 ## Installation
 
-1. Tambahkan helm repository Helm kubeinvaders
+### KubeDoom Deployment
+1. Apply manifest untuk melakukan deployment Game KubeDoom
 ```bash
-$ helm repo add kubeinvaders https://lucky-sideburn.github.io/helm-charts/
+kubectl apply -k manifest/
 ```
-
-2. Buat namespace kubeinvaders
+2. Jalankan VNC Viewer agar bisa menjalankan game pada port 5901
 ```bash
-$ kubectl create namespace kubeinvaders
+$ vncviewer viewer localhost:5901
 ```
-
-3. Buat namespace target
+3. Gunakan cheat berikut agar karakter ada pada "GOD MODE"
 ```bash
-$ kubectl create namespace netclass
-```
-
-4. Install kubeinvaders dengan tambahan konfigurasi tambahan namespace target
+$ vncviewer viewer localhost:5901
 ```bash
-$ helm install kubeinvaders --set-string target_namespace="netclass" \
--n kubeinvaders kubeinvaders/kubeinvaders --set ingress.hostName=netclass.pod --set image.tag=v1.9
+idspispopd | idkfa | iddqd
 ```
 
-5. Update helm repository
+### Prometheus & Grafana Deployment
+1. Buat Namespace monitoring 
 ```bash
-$ helm repo update
+kubectl create ns monitoring
+kubectl create ns 
 ```
-
-6. Install package helm nginx-ingress
+2. Apply monitoring deployment
 ```bash
-$ helm install nginx-ingress ingress-nginx/ingress-nginx
+kubectl apply -f k8s/ -n monitoring
 ```
-
-7. Edit Ingress
-```txt
-# kubectl.io/ingress.class: "nginx"
-```
-
-8. Cek Ingress
+3. Tunggu dan cek pod sudah ready dan siap digunakan
 ```bash
-$ kubectl get ingresses.networking.k8s.io -n kubeinvaders
+kubectl get pods -o wide -n monitoring
 ```
 
-9. Tambahkan di dalam /etc/hosts/ dengan IP Ingress
