@@ -2,7 +2,7 @@
 
 ## Brief Introduction
 
-<img src="https://github.com/raflihadiana/java-project/blob/main/app-ui/Login%20Page.png" width="350" height="200" /> 
+<img src="https://github.com/raflihadiana/net-class/blob/main/picture/doom.jpg" width="350" height="200" /> 
 
 ## Prerequisite
 
