@@ -26,6 +26,11 @@ $ vncviewer viewer localhost:5901
 ```bash
 idspispopd | idkfa | iddqd
 ```
+4. Jalankan deployment nginx dengan replica tertentu sesuai dengan banyak musuh
+```bash
+kubectl apply -f nginx-deployment.yaml
+```
+
 
 ### Prometheus & Grafana Deployment
 1. Buat Namespace monitoring 
