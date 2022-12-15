@@ -1,5 +1,9 @@
 # Implementasi Monitoring KubeDoom dalam Cluster
 
+## Brief Introduction
+
+<img src="https://github.com/raflihadiana/java-project/blob/main/app-ui/Login%20Page.png" width="350" height="200" /> 
+
 ## Prerequisite
 
 1. Kubernetes Cluster telah di setting
