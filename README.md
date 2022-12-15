@@ -1,4 +1,4 @@
-# Implementasi Monitoring KubeDoom dalam Kubernetes Cluster
+# Implementasi Monitoring KubeDoom dalam Cluster
 
 ## Prerequisite
 
