@@ -54,7 +54,7 @@ kubectl port-forward -n monitoring grafana-5469c64c7d-ddz4r 3000
 http://<Prometheus Pod IP>:9090
 ```
 6. Buat Panel Dashboard Baru
-From the left hand menu, create a new dashboard and add a panel. Select the panels dropdown menu, select Inspect and then select Panel JSON. Here you will be able to delete the current JSON and replace it with JSON from the grafana folder ./grafana/nginx-panel.json. Save and apply this and you should be able to see the CPU usage of the current deployed pods.
+Konfigurasi Panel JSON ada pada folder `./grafana/nginx-panel.json`. Lalu Save and apply.
 
 ### Let's Play The Game!!
 
