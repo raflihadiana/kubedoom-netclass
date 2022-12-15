@@ -25,8 +25,6 @@ $ vncviewer viewer localhost:5901
 ```
 3. Gunakan cheat berikut agar karakter ada pada "GOD MODE"
 ```bash
-$ vncviewer viewer localhost:5901
-```bash
 idspispopd | idkfa | iddqd
 ```
 
@@ -44,4 +42,6 @@ kubectl apply -f k8s/ -n monitoring
 ```bash
 kubectl get pods -o wide -n monitoring
 ```
+4. 
 
+### Let's Play The Game!!
