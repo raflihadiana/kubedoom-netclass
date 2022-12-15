@@ -54,6 +54,7 @@ kubectl port-forward -n monitoring grafana-5469c64c7d-ddz4r 3000
 http://<Prometheus Pod IP>:9090
 ```
 6. Buat Panel Dashboard Baru
+
 Konfigurasi Panel JSON ada pada folder `./grafana/nginx-panel.json`. Lalu Save and apply.
 
 ### Let's Play The Game!!
