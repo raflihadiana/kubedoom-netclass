@@ -4,7 +4,7 @@
 
 <img src="https://github.com/raflihadiana/net-class/blob/main/picture/doom.jpg" width="350" height="200" /> 
 
-KubeDoom adalah game yang digunakan sebagai cara unik untuk melakukan Chaos Engineering. Daripada menggunakan code-code kompleks dan rumit, kita bisa menggunakan KubeDoom dengan mematikan pod-pod yang ada sehingga resiliensi dari Cluster bisa ditest dengan cara yang menyenangkan. Cek lebih lanjut di sini : https://github.com/storax/kubedoom
+KubeDoom adalah game yang digunakan sebagai cara unik untuk melakukan Chaos Engineering. Daripada menggunakan code-code kompleks dan rumit, kita bisa menggunakan KubeDoom dengan mematikan pod-pod yang ada sehingga resiliensi dari aplikasi kita sehingga bisa ditest dengan cara yang menyenangkan. Cek lebih lanjut di sini : https://github.com/storax/kubedoom
 
 ## Prerequisite
 
