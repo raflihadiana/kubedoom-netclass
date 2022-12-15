@@ -44,9 +44,9 @@ kubectl port-forward -n monitoring prometheus-deployment-75cff7d89f-w422q 8080:9
 ```bash
 kubectl port-forward -n monitoring grafana-5469c64c7d-ddz4r 3000
 ```
-  Akses aplikasi prometheus pada browser dengan URL `localhost:8080`
-  Akses aplikasi grafana pada browser dengan URL `localhost:3000` 
-  Akses aplikasi grafana dengan user: `admin` & pass: `admin`
+  - Akses aplikasi prometheus pada browser dengan URL `localhost:8080`
+  - Akses aplikasi grafana pada browser dengan URL `localhost:3000` 
+  - Akses aplikasi grafana dengan user: `admin` & pass: `admin`
 
 5. Konfigurasi Data Source dengan IP dari Pod Prometheus
 ```console
